@@ -19,9 +19,65 @@
 <h2>David</h2>
 <button onclick="document.getElementById('myImage').src='left.png'">point to the left</button>
 
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+<img id="myImage" src="left.png" style="width:100px">
 
 <button onclick="document.getElementById('myImage').src='right.png'">point to the right</button>
+<p>x=6</p>
+<p>y=2</p>
+<p>z=x*y</p>
+<p id="variable"></p>
+
+<script>
+
+x = 6;
+y = 2;
+z = x*y;
+document.getElementById("variable").innerHTML =
+"The value of z is: " + z;
+</script>
+<p>What are some classic instruments?</p>
+<p id="Arrays"></p>
+<script>
+const music = [
+  "Guitar",
+  "Piano",
+  "Bass"
+];
+document.getElementById("Arrays").innerHTML = music;
+</script>
+
+<p id="function"></p>
+<script>
+    function myFunction(x, y) {
+      return x+y;
+    }
+    document.getElementById("function").innerHTML = myFunction(4, 3);
+    </script>
+
+<p id="if">What time are you there now?</p>
+
+<script>
+if (time < 10) {
+    greeting = "It's morning";
+} else if(time>10){
+    greeting ="It's afternoon"
+}else if(time > 20){
+    gree1= "It's evening"
+}
+</script>
+
+<p id="loop"></p>
+
+<script>
+let text = "";
+let i = 1;
+while (i < 20) {
+  text += "<br>It should be " + i;
+  i++;
+}
+document.getElementById("loop").innerHTML = text;
+</script>
+
 
 <hr>
 
