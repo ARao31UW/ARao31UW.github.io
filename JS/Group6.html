@@ -11,6 +11,11 @@
             }
         </style>
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="index.css">
+
     </head>
 
     <body>
@@ -80,6 +85,257 @@ document.getElementById("loop").innerHTML = text;
 
 
 <hr>
+
+<h1>
+    Jadens Part
+</h1>
+
+<h1>DND NPC Maker</h1>
+      <h2 onclick="call()">Click to make character</h2>
+
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6">
+                <h3>Name</h3>
+                <script>
+                    function genNum()
+                    {
+                      var num = 0;
+
+                    }
+                    function getRandomInt(max) 
+                    {
+                         return Math.floor(Math.random() * max);
+                    }
+
+                    function genNum()
+                    {
+                      var num =0;
+                      var temp =10;
+                      var end = 0;
+
+                      for(var i =0;i<5;i++)
+                      {
+                        num =  getRandomInt(6);
+                        if(num<temp)
+                        {
+                          temp = num;
+                        }
+
+                        end += num;
+                        
+                      }
+
+                      end -= temp;
+
+                      return end;
+
+                      
+                    }
+                    function names() 
+                    {
+                        const nam=["Adam", "Alex", "Aaron", "Ben", "Carl", "Dan", "David", "Edward", "Fred", "Frank", "George", "Hal", "Hank", "Ike", "John", "Jack", "Joe", "Larry", "Monte", "Matthew", "Mark", "Nathan", "Otto", "Paul", "Peter", "Roger", "Roger", "Steve", "Thomas", "Tim", "Ty", "Victor", "Walter"]
+                        
+                        document.getElementById("name").innerHTML = nam[getRandomInt(30)];
+
+                    }
+
+                    function race() 
+                  {
+                      const rac=["human","elf","dwarf","half-elf","orc","goblin"]
+                      
+                      document.getElementById("race").innerHTML = rac[getRandomInt(6)];
+
+                  }
+
+                  function classes() 
+                  {
+                      const cla=["artiicer","barbarian","bard","cleric","druid","fighter","monk","paldin","ranger","rogue","sorcerer","warlock","wizard"]
+                      
+                      document.getElementById("class").innerHTML = cla[getRandomInt(cla.length)];
+
+                  }
+
+                  function getRndInteger(min, max) 
+                {
+                     return Math.floor(Math.random() * (max - min) ) + min;
+                }
+                  function strength() 
+                  {
+
+                    
+                    
+
+                    
+                     
+                      document.getElementById("str").innerHTML = genNum();
+
+                  }
+
+                  function dext() 
+                  {
+                     
+                      document.getElementById("dex").innerHTML =  genNum();
+
+                  }
+
+                  function cons() 
+                  {
+                     
+                      document.getElementById("con").innerHTML =  genNum();
+
+                  }
+
+                  function wisd() 
+                  {
+                     
+                      document.getElementById("wis").innerHTML =  genNum();
+
+                  }
+
+                  function inte() 
+                  {
+                     
+                      document.getElementById("int").innerHTML =  genNum();
+
+                  }
+
+                  function chari() 
+                  {
+                     
+                      document.getElementById("cha").innerHTML = genNum();
+
+                  }
+
+                  function call()
+                  {
+                      names();
+                      race();
+                      classes();
+                      strength();
+                      dext();
+                      cons();
+                      wisd();
+                      inte();
+                      chari();
+                  }
+                </script>
+                
+              </div>
+              <div class="col-sm-6">
+                <h3 id="name"></h3>
+                
+              </div>
+          </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+              <h3>race</h3>
+              
+            </div>
+            <div class="col-sm-6">
+              <h3 id="race"></h3>
+            
+              
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+              <h3>class</h3>
+              
+            </div>
+            <div class="col-sm-6">
+              <h3 id="class"></h3>
+            
+              
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+              <h3>Strength</h3>
+              
+            </div>
+            <div class="col-sm-6">
+              <h3 id="str"></h3>
+              
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+              <h3>Dexterity</h3>
+              
+            </div>
+            <div class="col-sm-6">
+              <h3 id="dex"></h3>
+              
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+              <h3>Constitution</h3>
+              
+            </div>
+            <div class="col-sm-6">
+              <h3 id="con"></h3>
+              
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+              <h3>Wisdom</h3>
+              
+            </div>
+            <div class="col-sm-6">
+              <h3 id="wis"></h3>
+              
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+              <h3>Intelligence</h3>
+              
+            </div>
+            <div class="col-sm-6">
+              <h3 id="int"></h3>
+              
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+              <h3>Charisma</h3>
+              
+            </div>
+            <div class="col-sm-6">
+              <h3 id="cha"></h3>
+              
+            </div>
+        </div>
+    </div>
+
+
 
     </body>
 </html>
