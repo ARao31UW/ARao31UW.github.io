@@ -338,4 +338,348 @@ document.getElementById("loop").innerHTML = text;
 
 
     </body>
+
+    <!--Ani's Contribution-->
+  
+    <h1>Skill Checks</h1>
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-6">
+          <h2 onclick="acr()">Acrobatics (Dex)</h2>
+        </div>
+        <div class = "col-sm-6">
+          <h3 id = "acro">
+            <script>
+              function acr()
+              {
+                document.getElementById("acro").innerHTML = dex_skill();
+              }
+            </script>
+          </h3>
+        </div>
+      </div>
+    </div>
+    
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-6">
+          <h2 onclick="ani()">Animal Handling (Wis)</h2>
+        </div>
+        <div class = "col-sm-6">
+          <h3 id = "anim">
+            <script>
+              function ani()
+              {
+                document.getElementById("anim").innerHTML = wis_skill();
+              }
+            </script>
+          </h3>
+        </div>
+      </div>
+    </div>
+    
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-6">
+          <h2 onclick="arc()">Arcana (Int)</h2>
+        </div>
+        <div class = "col-sm-6">
+          <h3 id = "arca">
+            <script>
+            function arc()
+              {
+                document.getElementById("arca").innerHTML = int_skill();
+              }
+            </script>
+          </h3>
+        </div>
+      </div>
+    </div>
+    
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-6">
+          <h2 onclick="ath()">Athletics (Str)</h2>
+        </div>
+        <div class = "col-sm-6">
+          <h3 id = "athl">
+            <script>
+            function ath()
+              {
+                document.getElementById("athl").innerHTML = str_skill();
+              }
+            </script>
+            </h3>
+        </div>
+      </div>
+    </div>
+    
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-6">
+          <h2 onclick="dec()">Deception (Cha)</h2>
+        </div>
+        <div class = "col-sm-6">
+          <h3 id = "dece">
+            <script>
+            function dec()
+              {
+                document.getElementById("dece").innerHTML = cha_skill();
+              }
+            </script>
+            </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-6">
+          <h2 onclick="his()">History (Int)</h2>
+        </div>
+        <div class = "col-sm-6">
+          <h3 id = "hist">
+            <script>
+            function his()
+              {
+                document.getElementById("hist").innerHTML = int_skill();
+              }
+            </script>
+            </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-6">
+          <h2 onclick="ins()">Insight (Wis)</h2>
+        </div>
+        <div class = "col-sm-6">
+          <h3 id = "insi">
+            <script>
+            function dec()
+              {
+                document.getElementById("insi").innerHTML = wis_skill();
+              }
+            </script>
+            </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-6">
+          <h2 onclick="intim()">Intimidation (Cha)</h2>
+        </div>
+        <div class = "col-sm-6">
+          <h3 id = "inti">
+            <script>
+            function intim()
+              {
+                document.getElementById("inti").innerHTML = cha_skill();
+              }
+            </script>
+            </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-6">
+          <h2 onclick="int_skill()">Investigation (Int)</h2>
+        </div>
+        <div class = "col-sm-6">
+          <h3 id = "inve">
+            <script>
+            function dec()
+              {
+                document.getElementById("inve").innerHTML = int_skill();
+              }
+            </script>
+            </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-6">
+          <h2 onclick="wis_skill()">Medicine (Wis)</h2>
+        </div>
+        <div class = "col-sm-6">
+          <h3 id = "medi">
+            <script>
+            function dec()
+              {
+                document.getElementById("medi").innerHTML = wis_skill();
+              }
+            </script>
+            </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-6">
+          <h2 onclick="int_skill()">Nature (Int)</h2>
+        </div>
+        <div class = "col-sm-6">
+          <h3 id = "natu">
+            <script>
+            function dec()
+              {
+                document.getElementById("natu").innerHTML = int_skill();
+              }
+            </script>
+            </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-6">
+          <h2 onclick="wis_skill()">Perception (Wis)</h2>
+        </div>
+        <div class = "col-sm-6">
+          <h3 id = "perc">
+            <script>
+            function dec()
+              {
+                document.getElementById("perc").innerHTML = wis_skill();
+              }
+            </script>
+            </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-6">
+          <h2 onclick="cha_skill()">Performance (Cha)</h2>
+        </div>
+        <div class = "col-sm-6">
+          <h3 id = "perf">
+            <script>
+            function dec()
+              {
+                document.getElementById("insi").innerHTML = wis_skill();
+              }
+            </script>
+            </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-6">
+          <h2 onclick="cha_skill()">Persuasion (Cha)</h2>
+        </div>
+        <div class = "col-sm-6">
+          <h3 id = "pers">
+            <script>
+            function dec()
+              {
+                document.getElementById("pers").innerHTML = cha_skill();
+              }
+            </script>
+            </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-6">
+          <h2 onclick="int_skill()">Religion (Int)</h2>
+        </div>
+        <div class = "col-sm-6">
+          <h3 id = "reli">
+            <script>
+            function dec()
+              {
+                document.getElementById("reli").innerHTML = int_skill();
+              }
+            </script>
+            </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-6">
+          <h2 onclick="dex_skill()">Sleight of Hand (Dex)</h2>
+        </div>
+        <div class = "col-sm-6">
+          <h3 id = "slei">
+            <script>
+            function dec()
+              {
+                document.getElementById("slei").innerHTML = dex_skill();
+              }
+            </script>
+            </h3>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function str_skill()
+      {
+        var roll = 0;
+        roll = getRndInteger(1, 20);
+        var ability = (getElementById("str").innerHTML - 10.0) / 2
+        roll += ability;
+
+        return roll;
+      }
+      function dex_skill()
+      {
+        var roll = getRndInteger(1, 20);
+        var ability = (getElementById("dex").innerHTML - 10.0) / 2
+        roll += ability;
+
+        return roll;
+      }
+      function con_skill()
+      {
+        var roll = getRndInteger(1, 20);
+        var ability = (getElementById("con").innerHTML - 10.0) / 2
+        roll += ability;
+
+        return roll;
+      }
+      function int_skill()
+      {
+        var roll = getRndInteger(1, 20);
+        var ability = (getElementById("int").innerHTML - 10.0) / 2
+        roll += ability;
+
+        return roll;
+      }
+      function wis_skill()
+      {
+        var roll = getRndInteger(1, 20);
+        var ability = (getElementById("wis").innerHTML - 10.0) / 2
+        roll += ability;
+
+        return roll;
+      }
+      function cha_skill()
+      {
+        var roll = getRndInteger(1, 20);
+        var ability = (getElementById("cha").innerHTML - 10.0) / 2
+        roll += ability;
+
+        return roll;
+      }
+    </script>
+
 </html>
