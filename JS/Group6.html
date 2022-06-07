@@ -458,7 +458,7 @@ document.getElementById("loop").innerHTML = text;
         <div class = "col-sm-6">
           <h3 id = "insi">
             <script>
-            function dec()
+            function ins()
               {
                 document.getElementById("insi").innerHTML = wis_skill();
               }
@@ -489,12 +489,12 @@ document.getElementById("loop").innerHTML = text;
     <div class = "container">
       <div class = "row">
         <div class = "col-sm-6">
-          <h2 onclick="int_skill()">Investigation (Int)</h2>
+          <h2 onclick="inv()">Investigation (Int)</h2>
         </div>
         <div class = "col-sm-6">
           <h3 id = "inve">
             <script>
-            function dec()
+            function inv()
               {
                 document.getElementById("inve").innerHTML = int_skill();
               }
@@ -507,12 +507,12 @@ document.getElementById("loop").innerHTML = text;
     <div class = "container">
       <div class = "row">
         <div class = "col-sm-6">
-          <h2 onclick="wis_skill()">Medicine (Wis)</h2>
+          <h2 onclick="med()">Medicine (Wis)</h2>
         </div>
         <div class = "col-sm-6">
           <h3 id = "medi">
             <script>
-            function dec()
+            function med()
               {
                 document.getElementById("medi").innerHTML = wis_skill();
               }
@@ -525,12 +525,12 @@ document.getElementById("loop").innerHTML = text;
     <div class = "container">
       <div class = "row">
         <div class = "col-sm-6">
-          <h2 onclick="int_skill()">Nature (Int)</h2>
+          <h2 onclick="nat()">Nature (Int)</h2>
         </div>
         <div class = "col-sm-6">
           <h3 id = "natu">
             <script>
-            function dec()
+            function nat()
               {
                 document.getElementById("natu").innerHTML = int_skill();
               }
@@ -543,12 +543,12 @@ document.getElementById("loop").innerHTML = text;
     <div class = "container">
       <div class = "row">
         <div class = "col-sm-6">
-          <h2 onclick="wis_skill()">Perception (Wis)</h2>
+          <h2 onclick="per()">Perception (Wis)</h2>
         </div>
         <div class = "col-sm-6">
           <h3 id = "perc">
             <script>
-            function dec()
+            function per()
               {
                 document.getElementById("perc").innerHTML = wis_skill();
               }
@@ -561,14 +561,14 @@ document.getElementById("loop").innerHTML = text;
     <div class = "container">
       <div class = "row">
         <div class = "col-sm-6">
-          <h2 onclick="cha_skill()">Performance (Cha)</h2>
+          <h2 onclick="perfo()">Performance (Cha)</h2>
         </div>
         <div class = "col-sm-6">
           <h3 id = "perf">
             <script>
-            function dec()
+            function perfo()
               {
-                document.getElementById("insi").innerHTML = wis_skill();
+                document.getElementById("perf").innerHTML = wis_skill();
               }
             </script>
             </h3>
@@ -579,12 +579,12 @@ document.getElementById("loop").innerHTML = text;
     <div class = "container">
       <div class = "row">
         <div class = "col-sm-6">
-          <h2 onclick="cha_skill()">Persuasion (Cha)</h2>
+          <h2 onclick="persu()">Persuasion (Cha)</h2>
         </div>
         <div class = "col-sm-6">
           <h3 id = "pers">
             <script>
-            function dec()
+            function persu()
               {
                 document.getElementById("pers").innerHTML = cha_skill();
               }
@@ -597,12 +597,12 @@ document.getElementById("loop").innerHTML = text;
     <div class = "container">
       <div class = "row">
         <div class = "col-sm-6">
-          <h2 onclick="int_skill()">Religion (Int)</h2>
+          <h2 onclick="rel()">Religion (Int)</h2>
         </div>
         <div class = "col-sm-6">
           <h3 id = "reli">
             <script>
-            function dec()
+            function rel()
               {
                 document.getElementById("reli").innerHTML = int_skill();
               }
@@ -615,12 +615,12 @@ document.getElementById("loop").innerHTML = text;
     <div class = "container">
       <div class = "row">
         <div class = "col-sm-6">
-          <h2 onclick="dex_skill()">Sleight of Hand (Dex)</h2>
+          <h2 onclick="sle()">Sleight of Hand (Dex)</h2>
         </div>
         <div class = "col-sm-6">
           <h3 id = "slei">
             <script>
-            function dec()
+            function sle()
               {
                 document.getElementById("slei").innerHTML = dex_skill();
               }
@@ -633,9 +633,8 @@ document.getElementById("loop").innerHTML = text;
     <script>
       function str_skill()
       {
-        var roll = 0;
-        roll = getRndInteger(1, 20);
-        var ability = (getElementById("str").innerHTML - 10.0) / 2
+        var roll = getRndInteger(1, 20);
+        var ability = Math.floor((document.getElementById("str").innerHTML - 10) / 2);
         roll += ability;
 
         return roll;
@@ -643,7 +642,7 @@ document.getElementById("loop").innerHTML = text;
       function dex_skill()
       {
         var roll = getRndInteger(1, 20);
-        var ability = (getElementById("dex").innerHTML - 10.0) / 2
+        var ability = Math.floor((document.getElementById("dex").innerHTML - 10.0) / 2);
         roll += ability;
 
         return roll;
@@ -651,7 +650,7 @@ document.getElementById("loop").innerHTML = text;
       function con_skill()
       {
         var roll = getRndInteger(1, 20);
-        var ability = (getElementById("con").innerHTML - 10.0) / 2
+        var ability = Math.floor((document.getElementById("con").innerHTML - 10.0) / 2);
         roll += ability;
 
         return roll;
@@ -659,7 +658,7 @@ document.getElementById("loop").innerHTML = text;
       function int_skill()
       {
         var roll = getRndInteger(1, 20);
-        var ability = (getElementById("int").innerHTML - 10.0) / 2
+        var ability = Math.floor((document.getElementById("int").innerHTML - 10.0) / 2);
         roll += ability;
 
         return roll;
@@ -667,7 +666,7 @@ document.getElementById("loop").innerHTML = text;
       function wis_skill()
       {
         var roll = getRndInteger(1, 20);
-        var ability = (getElementById("wis").innerHTML - 10.0) / 2
+        var ability = Math.floor((document.getElementById("wis").innerHTML - 10.0) / 2);
         roll += ability;
 
         return roll;
@@ -675,7 +674,7 @@ document.getElementById("loop").innerHTML = text;
       function cha_skill()
       {
         var roll = getRndInteger(1, 20);
-        var ability = (getElementById("cha").innerHTML - 10.0) / 2
+        var ability = Math.floor((document.getElementById("cha").innerHTML - 10.0) / 2);
         roll += ability;
 
         return roll;
